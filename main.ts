@@ -1,6 +1,3 @@
-/**
- * Press the A button to see how the robot travels from the bottom left of the grid to the top right.  Then use the Robo Drawing blocks to design a new path for your robot to follow.  Start the robot anywhere on the grid by setting the coordinates in the Reset block.
- */
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     n = 1
     for (let index = 0; index < 3; index++) {
@@ -15,5 +12,8 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         n += 1
     }
 })
+/**
+ * Press the A button to see how the robot travels from the bottom left of the grid to the top right.  Then use the Robo Drawing blocks to design a new path for your robot to follow.  Start the robot anywhere on the grid by setting the coordinates in the Reset block.
+ */
 let n = 0
 RoboDrawing.roboReset(0, 6, RoboDrawing.Direction.Right)
